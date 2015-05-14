@@ -42,11 +42,7 @@
                     <h3>{{ .Site.Params.description }}</h3>
                     <hr class="intro-divider">
                     <ul class="list-inline intro-social-buttons">
-                        {{ range .Site.Params.social }}
-                        <li>
-                            <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ .title }} fa-fw"></i> <span class="network-name">{{ .title }}</span></a>
-                        </li>
-                        {{ end }}
+		        {{ partial "social.html" . }}
                     </ul>
                 </div>
             </div>
