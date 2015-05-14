@@ -1,5 +1,7 @@
+<section id="services">
+
 <!-- Page Content -->
- {{ range $index, $element :=  .Data.Pages }}{{ if eq .Section "post" }}
+ {{ range $index, $element :=  .Data.Pages }}{{ if eq .Section "services" }}
     {{ if modBool $index 2 }}
     <div class="content-section-a">
 
@@ -52,3 +54,5 @@
     <!-- /.content-section-b -->
     {{ end }}
 {{ end }}
+
+</section>
