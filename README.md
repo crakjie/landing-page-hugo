@@ -39,12 +39,19 @@ title = "my new web site"
   description = "I <3 making web site"
 
 [[params.social]]
+    title = "email"
+    icon = "envelope-o"
+    url = "mailto:bushbama@whitehouse.gov"
+[[params.social]]
     title = "twitter"
+    icon = "twitter"
     url = "https://twitter.com/SBootstrap"
 [[params.social]]
     title = "github"
+    icon = "github"
     url = "https://github.com/IronSummitMedia/startbootstrap"
 [[params.social]]
     title = "linkedin"
+    icon = "linkedin"
     url = ""
 ```
