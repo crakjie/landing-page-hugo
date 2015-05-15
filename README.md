@@ -44,7 +44,7 @@ We specialize in bespoke widgets, built to your specification.
 Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
 
 
-## Contact Links
+## Social Contact Buttons
 
 Contact buttons will be automatically created if one or more
 `[[params.social]]` is configured in `config.toml`:
