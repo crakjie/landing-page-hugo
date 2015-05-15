@@ -1,7 +1,7 @@
 # Landing Page Theme for Hugo
 
-[Hugo](http://gohugo.io) theme based on 
-[landing-page theme ](https://github.com/swcool/landing-page-theme)
+[Hugo](http://gohugo.io) theme based on the
+[landing-page theme for Jekyll](https://github.com/swcool/landing-page-theme)
 
 # How to use
 
