@@ -1,10 +1,11 @@
-# Landing Page Hugo theme
+# Landing Page them for Hugo
 
-Hugo theme based on [landing-page theme ](https://github.com/swcool/landing-page-theme)
+[Hugo](http://gohugo.io) theme based on 
+[landing-page theme ](https://github.com/swcool/landing-page-theme)
 
-## How to use
+# How to use
 
-### About
+## About Section
 
 Create a markdown file named `content/services/about/about.md'
 
@@ -17,7 +18,7 @@ Draft: false
 WidgetCo is the world leader in widget production.
 ```
 
-### Services
+## Services Section
 
 Create a markdown file describing a service you offer in `content/services/` - e.g. `content/services/widgets.md`.
 
