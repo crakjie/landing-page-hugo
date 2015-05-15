@@ -3,18 +3,37 @@
 Hugo theme based on [landing-page theme ](https://github.com/swcool/landing-page-theme)
 
 ## How to use
- - Place a image in `static/img/`
- - Create posts to display your services. Use the follow as an example:
+
+### About
+
+Create a markdown file named `content/services/about/about.md'
 
 ```txt
 ---
-layout: default
-img: ipad.png
-category: Services
-title: The service title
-description: The description of the service
+Title: About Us
+Draft: false
 ---
+
+WidgetCo is the world leader in widget production.
 ```
+
+### Services
+
+Create a markdown file describing a service you offer in `content/services/` - e.g. `content/services/widgets.md`.
+
+```txt
+---
+Title: Widget Making
+Img: widgets.png
+Category: Services
+Draft: false
+---
+
+We make widgets!
+```
+
+Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
+
 
 ## Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
