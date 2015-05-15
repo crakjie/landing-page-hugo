@@ -24,13 +24,13 @@ Create a markdown file describing a service you offer in `content/services/` - e
 
 ```txt
 ---
-Title: Widget Making
+Title: Customized Widgets
 Img: widgets.png
 Category: Services
 Draft: false
 ---
 
-We make widgets!
+We specialize in bespoke widgets, built to your specification.
 ```
 
 Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
