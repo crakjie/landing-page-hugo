@@ -7,7 +7,7 @@
 
 ## About Section
 
-Create a markdown file named `content/services/about/about.md'
+Create a markdown file named `content/services/about/about.md`
 
 ```txt
 ---
