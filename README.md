@@ -5,6 +5,14 @@
 
 # How to use
 
+## Background Images
+
+Override the default intro and contact backgrounds by putting images in these files:
+
+* `img/intro-bg.jpg`
+* `img/contact-bg.jpg`
+
+
 ## About Section
 
 Create a markdown file named `content/services/about/about.md`
