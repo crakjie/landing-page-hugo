@@ -36,42 +36,44 @@ We specialize in bespoke widgets, built to your specification.
 Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
 
 
-## Demo
+## Contact Links
+
+Contact buttons will be automatically created if one or more
+`[[params.social]]` is configured in `config.toml`:
+
+```toml
+baseurl = "http://yourdomain.com"
+languageCode = "en-us"
+title = "WidgetCo Inc"
+[params]
+	description = "The best widgets in the world!"
+
+[[params.social]]
+	title = "email"
+	icon = "envelope-o"
+	url = "mailto:bushbama@whitehouse.gov"
+[[params.social]]
+	title = "twitter"
+	icon = "twitter"
+	url = "https://twitter.com/SBootstrap"
+[[params.social]]
+	title = "github"
+	icon = "github"
+	url = "https://github.com/IronSummitMedia/startbootstrap"
+[[params.social]]
+	title = "linkedin"
+	icon = "linkedin"
+	url = "http://linkedin.com/yourusername"
+```
+
+* `title` parameter sets the text to be displayed on the contact button
+* `icon` parameter sets which [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/icons/) 
+will be displayed.
+
+
+# Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
 
-## Screenshot
+# Screenshot
 ![screenshot](https://raw.githubusercontent.com/swcool/landing-page-theme/master/img/screenshot.png)
 
-===
-
-Work also with TOML header
-
-For more Hugo details, read [documentation](http://jekyllrb.com/).
-This Jekyll theme used [Freelancer Jekyll theme](https://github.com/jeromelachaud/freelancer-theme/) as reference.
-
-
-exemple of config.toml file
-```
-baseurl = "http://yourSiteHere"
-languageCode = "fr-fr"
-title = "my new web site"
-[params]
-  description = "I <3 making web site"
-
-[[params.social]]
-    title = "email"
-    icon = "envelope-o"
-    url = "mailto:bushbama@whitehouse.gov"
-[[params.social]]
-    title = "twitter"
-    icon = "twitter"
-    url = "https://twitter.com/SBootstrap"
-[[params.social]]
-    title = "github"
-    icon = "github"
-    url = "https://github.com/IronSummitMedia/startbootstrap"
-[[params.social]]
-    title = "linkedin"
-    icon = "linkedin"
-    url = ""
-```
