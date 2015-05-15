@@ -1,4 +1,4 @@
-# Landing Page them for Hugo
+# Landing Page Theme for Hugo
 
 [Hugo](http://gohugo.io) theme based on 
 [landing-page theme ](https://github.com/swcool/landing-page-theme)
