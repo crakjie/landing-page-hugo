@@ -79,6 +79,18 @@ title = "WidgetCo Inc"
 will be displayed.
 
 
+## Google Analytics
+
+Google Analytics support is automatically enabled if you set the
+`googleAnalytics` param in `config.toml` to your Google Analytics tracking ID.
+
+```toml
+[params]
+googleAnalytics = "UA-12345678-1"
+
+```
+
+
 # Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
 
