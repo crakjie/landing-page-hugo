@@ -109,49 +109,49 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
-.banner {
+.contact {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/contact-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.banner h2 {
+.contact h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
 }
 
-.banner ul {
+.contact ul {
     margin-bottom: 0;
 }
 
-.banner-social-buttons {
+.contact-social-buttons {
     float: right;
     margin-top: 0;
 }
 
 @media(max-width:1199px) {
-    ul.banner-social-buttons {
+    ul.contact-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
 @media(max-width:767px) {
-    .banner h2 {
+    .contact h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
     }
 
-    ul.banner-social-buttons > li {
+    ul.contact-social-buttons > li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
 
-    ul.banner-social-buttons > li:last-child {
+    ul.contact-social-buttons > li:last-child {
         margin-bottom: 0;
     }
 }

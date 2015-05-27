@@ -1,50 +1,99 @@
-# Landing Page Hugo theme
+# Landing Page Theme for Hugo
 
-Hugo theme based on [landing-page theme ](https://github.com/swcool/landing-page-theme)
+[Hugo](http://gohugo.io) theme based on the
+[landing-page theme for Jekyll](https://github.com/swcool/landing-page-theme)
 
-## How to use
- - Place a image in `static/img/`
- - Create posts to display your services. Use the follow as an example:
+# How to use
+
+## Background Images
+
+Override the default intro and contact backgrounds by putting images in these files:
+
+* `img/intro-bg.jpg`
+* `img/contact-bg.jpg`
+
+
+## About Section
+
+Create a markdown file named `content/services/about/about.md`
 
 ```txt
 ---
-layout: default
-img: ipad.png
-category: Services
-title: The service title
-description: The description of the service
+Title: About Us
+Draft: false
 ---
+
+WidgetCo is the world leader in widget production.
 ```
 
-## Demo
+## Services Section
+
+Create a markdown file describing a service you offer in `content/services/` - e.g. `content/services/widgets.md`.
+
+```txt
+---
+Title: Customized Widgets
+Img: widgets.png
+Category: Services
+Draft: false
+---
+
+We specialize in bespoke widgets, built to your specification.
+```
+
+Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
+
+
+## Social Contact Buttons
+
+Contact buttons will be automatically created if one or more
+`[[params.social]]` is configured in `config.toml`:
+
+```toml
+baseurl = "http://yourdomain.com"
+languageCode = "en-us"
+title = "WidgetCo Inc"
+[params]
+	description = "The best widgets in the world!"
+
+[[params.social]]
+	title = "email"
+	icon = "envelope-o"
+	url = "mailto:bushbama@whitehouse.gov"
+[[params.social]]
+	title = "twitter"
+	icon = "twitter"
+	url = "https://twitter.com/SBootstrap"
+[[params.social]]
+	title = "github"
+	icon = "github"
+	url = "https://github.com/IronSummitMedia/startbootstrap"
+[[params.social]]
+	title = "linkedin"
+	icon = "linkedin"
+	url = "http://linkedin.com/yourusername"
+```
+
+* `title` parameter sets the text to be displayed on the contact button
+* `icon` parameter sets which [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/icons/) 
+will be displayed.
+
+
+## Google Analytics
+
+Google Analytics support is automatically enabled if you set the
+`googleAnalytics` param in `config.toml` to your Google Analytics tracking ID.
+
+```toml
+[params]
+googleAnalytics = "UA-12345678-1"
+
+```
+
+
+# Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
 
-## Screenshot
+# Screenshot
 ![screenshot](https://raw.githubusercontent.com/swcool/landing-page-theme/master/img/screenshot.png)
 
-===
-
-Work also with TOML header
-
-For more Hugo details, read [documentation](http://jekyllrb.com/).
-This Jekyll theme used [Freelancer Jekyll theme](https://github.com/jeromelachaud/freelancer-theme/) as reference.
-
-
-exemple of config.toml file
-```
-baseurl = "http://yourSiteHere"
-languageCode = "fr-fr"
-title = "my new web site"
-[params]
-  description = "I <3 making web site"
-
-[[params.social]]
-    title = "twitter"
-    url = "https://twitter.com/SBootstrap"
-[[params.social]]
-    title = "github"
-    url = "https://github.com/IronSummitMedia/startbootstrap"
-[[params.social]]
-    title = "linkedin"
-    url = ""
-```
