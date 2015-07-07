@@ -5,7 +5,7 @@ description = "An elegant open source landing page theme."
 homepage = "https://github.com/crakjie/landing-page-hugo"
 tags = ["company", "products", "landing page"]
 features = ["social", "images" ]
-min_version= 0.12
+min_version= 0.14
 
 [author]
      name = "crakjie"
