@@ -1,6 +1,8 @@
 baseurl = "http://yourdomain.com"
 languageCode = "en-us"
 title = "WidgetCo Inc"
+canonifyUrls = "true"
+
 [params]
     description = "The best widgets in the world!"
 
