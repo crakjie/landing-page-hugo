@@ -21,4 +21,4 @@ canonifyUrls = "true"
 [[params.social]]
     title = "linkedin"
     icon = "linkedin"
-    url = "http://linkedin.com/yourusername"
+    url = "http://linkedin.com/in/yourusername"
