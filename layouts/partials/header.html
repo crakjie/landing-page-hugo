@@ -20,9 +20,11 @@
                 <li>
                     <a class="page-scroll" href="#services">Services</a>
                 </li>
+                {{ if isset .Site.Params "social" }}
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                {{ end }}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -42,9 +44,11 @@
 			    <h1>{{ .Site.Title }}</h1>
 			    <h3>{{ .Site.Params.description }}</h3>
 			    <hr class="intro-divider">
+			    {{ if isset .Site.Params "social" }}
 			    <ul class="list-inline intro-social-buttons">
 				        {{ partial "social.html" . }}
 			    </ul>
+			    {{ end }}
 			</div>
 		    </div>
 		</div>
