@@ -75,7 +75,7 @@ title = "WidgetCo Inc"
 ```
 
 * `title` parameter sets the text to be displayed on the contact button
-* `icon` parameter sets which [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/icons/) 
+* `icon` parameter sets which [Font Awesome icon](http://fortawesome.github.io/Font-Awesome/icons/)
 will be displayed.
 
 
@@ -94,6 +94,11 @@ googleAnalytics = "UA-12345678-1"
 # Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
 
+#Have a look, Have a try
+```
+git clone https://github.com/crakjie/landing-page-hugo.git
+cd landing-page-hugo/exempleSite
+hugo server -t landing-page-hugo
+```
 # Screenshot
 ![screenshot](https://raw.githubusercontent.com/swcool/landing-page-theme/master/img/screenshot.png)
-
