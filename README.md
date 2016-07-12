@@ -97,7 +97,7 @@ View this equivalent jekyll theme in action [here](https://swcool.github.io/land
 #Have a look, Have a try
 ```
 git clone https://github.com/crakjie/landing-page-hugo.git
-cd landing-page-hugo/exempleSite
+cd landing-page-hugo/exampleSite
 hugo server -t landing-page-hugo
 ```
 # Screenshot
