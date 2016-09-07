@@ -15,6 +15,11 @@
 
     <!-- Custom CSS -->
     <link href="/css/landing-page.css" rel="stylesheet">
+    
+    <!-- Local CSS -->
+    {{ range .Site.Params.custom_css }}
+        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
 
     <!-- Custom Fonts -->
     <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
