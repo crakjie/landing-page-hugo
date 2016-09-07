@@ -15,7 +15,7 @@ Override the default intro and contact backgrounds by putting images in these fi
 
 ## About Section
 
-Create a markdown file named `content/services/about/about.md`
+Create a markdown file named `content/about/about.md`
 
 ```txt
 ---
@@ -90,6 +90,14 @@ googleAnalytics = "UA-12345678-1"
 
 ```
 
+## Custom CSS
+
+Add your own CSS to overide theme css by specifying file(s) in `custom_css` param e.g. `static/css/local.css` and `static/css/media.css`
+
+```toml
+[params]
+custom_css = ["css/local.css","css/media.css"]
+```
 
 # Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
