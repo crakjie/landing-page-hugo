@@ -15,7 +15,7 @@ Override the default intro and contact backgrounds by putting images in these fi
 
 ## About Section
 
-Create a markdown file named `content/services/about/about.md`
+Create a markdown file named `content/about/about.md`
 
 ```txt
 ---
