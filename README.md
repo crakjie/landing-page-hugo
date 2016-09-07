@@ -92,7 +92,7 @@ googleAnalytics = "UA-12345678-1"
 
 ## Custom CSS
 
-Add your own CSS to overide theme css by specifying file(s) in `custom_css` param e.g. `static/css/local.css` and `static/css/media.css`
+Add custom CSS by specifying file(s) using `custom_css` param e.g. files such as `static/css/local.css` and `static/css/media.css`
 
 ```toml
 [params]
