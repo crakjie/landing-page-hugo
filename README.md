@@ -90,6 +90,14 @@ googleAnalytics = "UA-12345678-1"
 
 ```
 
+## Custom CSS
+
+Add custom CSS by specifying file(s) using `custom_css` param e.g. files such as `static/css/local.css` and `static/css/media.css`
+
+```toml
+[params]
+custom_css = ["css/local.css","css/media.css"]
+```
 
 # Demo
 View this equivalent jekyll theme in action [here](https://swcool.github.io/landing-page-theme)

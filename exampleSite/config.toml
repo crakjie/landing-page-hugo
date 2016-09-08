@@ -5,6 +5,7 @@ canonifyUrls = "true"
 
 [params]
     description = "The best widgets in the world!"
+    custom_css = ["css/local.css"]
 
 [[params.social]]
     title = "email"
