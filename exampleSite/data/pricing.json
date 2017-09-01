@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Free",
+        "link": "signup/free",
+        "linkText": "Signup",
+        "features": [
+            {
+                "name": "Free-Feature 1",
+                "description": "My feature 1 can do..."
+            },
+            {
+                "name": "Free-Feature 2",
+                "description": "with feature 2 you can..."
+            },
+            {
+                "name": "",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Basic",
+        "link": "signup/basic",
+        "linkText": "Signup",
+        "features": [
+            {
+                "name": "Basic-Feature1",
+                "description": "you can do..."
+            },
+            {
+                "name": "Basic-Feature2",
+                "description": "more details"
+            },
+            {
+                "name": "Basic-Feature3",
+                "description": "you can't believe it"
+            }
+        ]
+    },
+    {
+        "name": "Premium",
+        "link": "signup/premium",
+        "linkText": "Signup",
+        "features": [
+            {
+                "name": "Premium-Feature1",
+                "description": "you can do..."
+            },
+            {
+                "name": "Premium-Feature2",
+                "description": "more details"
+            },
+            {
+                "name": "Premium-Feature3",
+                "description": "you can't believe it"
+            }
+        ]
+    }
+
+]

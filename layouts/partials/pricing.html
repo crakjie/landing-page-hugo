@@ -1,0 +1,38 @@
+<!-- Pricing Section -->
+<section id="pricing" class="container content-section text-center">
+    {{ range where .Data.Pages "Section" "pricing" | first 1 }}
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br/>
+                <br/>
+                <h2>{{ .Title }}</h2>
+                <br/>
+                {{ .Content }}
+                <br/>
+
+                {{ $length := len $.Site.Data.pricing }}
+                <div class="Rtable Rtable--{{ $length }}cols Rtable--collapse">
+
+                    {{ range $index, $content := $.Site.Data.pricing }}
+                        <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>{{ $content.name }}</h3></div>
+                        {{ range $i, $feature := $content.features}}
+                            {{ $c :=add $i 1 }}
+                            <div style="order:{{ $c }};" class="Rtable-cell">{{ $feature.name }}</div>
+                        {{ end }}
+                        {{ $d := len $content.features }}
+                        <div style="order:{{ add $d 1 }};" class="Rtable-cell Rtable-cell--foot">
+                            <button class="pricing">
+                                <a href="{{ $content.link }}">
+                                    {{ $content.linkText }}
+                                </a>
+                            </button>
+                        </div>
+
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    {{ end }}
+    </section>
+    
