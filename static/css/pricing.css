@@ -1,0 +1,133 @@
+/* Tables
+The responsive tables part has been taken from
+https://css-tricks.com/accessible-simple-responsive-tables/
+and changed to our needs.
+We focus on "Responsive collapse (by column)" in this case here.
+The original LESS code is compiled to CSS here and all (most) not
+relevant parts are removed. Still some of the basics (e.g. Rtable-cell--foot)
+are kept in here in case we use them later.
+================================== */
+
+/*@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700); */
+
+.Rtable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid 1px white;
+  background: rgba(112, 128, 144, 0.2);
+}
+.Rtable-cell > h1,
+.Rtable-cell > h2,
+.Rtable-cell > h3,
+.Rtable-cell > h4,
+.Rtable-cell > h5,
+.Rtable-cell > h6 {
+  margin: 0;
+}
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+
+/* Apply styles
+================================== */
+.Rtable {
+  position: relative;
+  border-radius: 5px;
+  top: 3px;
+  left: 3px;
+}
+.Rtable-cell {
+  margin: -3px 0 1 -3px;
+  background-color: white;
+  border-color: #ebccd1;
+}
+/* Cell styles
+================================== */
+.Rtable-cell--head {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Rtable-cell--head > h1,
+.Rtable-cell--head > h2,
+.Rtable-cell--head > h3,
+.Rtable-cell--head > h4,
+.Rtable-cell--head > h5,
+.Rtable-cell--head > h6 {
+  color: #a94442;
+}
+.Rtable-cell--foot {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* Responsive
+==================================== */
+@media all and (max-width: 500px) {
+  .Rtable--collapse {
+    display: block;
+  }
+  .Rtable--collapse > .Rtable-cell {
+    width: 100% !important;
+  }
+  .Rtable--collapse > .Rtable-cell--foot {
+    margin-bottom: 1em;
+  }
+}
+
+/* This part is for the Signup Button in the pricing section. Added by matgnt@gmail.com */
+button.pricing {
+    width: 100%;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+    background-repeat: repeat-x;
+    border-radius: 6px;
+    padding: 12px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+button.pricing:hover, button.pricing:active {
+    background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
+}
+button.pricing > a,
+button.pricing > a:hover,
+button.pricing > a:active,
+button.pricing > a:visited {
+    color: #fff;
+    text-decoration: none;
+}
