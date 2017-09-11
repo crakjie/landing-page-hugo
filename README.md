@@ -43,6 +43,11 @@ We specialize in bespoke widgets, built to your specification.
 
 Then place a matching image in `static/img/services/` - e.g. `static/img/services/widgets.png`
 
+## Pricing Section
+
+![Pricing Section Screenshot](./images/Pricing_Section.png?raw=true "Pricing Section Screenshot")
+Find example data in `exampleSite/data/pricing.json`
+To enable the pricing section, create `content/pricing/pricing.md` with `draft: false` (or copy it from the exampleSite directory).
 
 ## Social Contact Buttons
 
