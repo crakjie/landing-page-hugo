@@ -108,7 +108,7 @@ are kept in here in case we use them later.
 }
 
 /* This part is for the Signup Button in the pricing section. Added by matgnt@gmail.com */
-button.pricing {
+div.pricing {
     width: 100%;
     background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
     background-repeat: repeat-x;
@@ -121,13 +121,13 @@ button.pricing {
     vertical-align: middle;
     border: none;
 }
-button.pricing:hover, button.pricing:active {
+div.pricing:hover, div.pricing:active {
     background-image: linear-gradient(to bottom,#449d44 0,#419641 100%);
 }
-button.pricing > a,
-button.pricing > a:hover,
-button.pricing > a:active,
-button.pricing > a:visited {
+div.pricing > a,
+div.pricing > a:hover,
+div.pricing > a:active,
+div.pricing > a:visited {
     color: #fff;
     text-decoration: none;
 }

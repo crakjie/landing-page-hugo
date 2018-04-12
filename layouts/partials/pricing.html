@@ -21,11 +21,11 @@
                         {{ end }}
                         {{ $d := len $content.features }}
                         <div style="order:{{ add $d 1 }};" class="Rtable-cell Rtable-cell--foot">
-                            <button class="pricing">
+                            <div class="pricing">
                                 <a href="{{ $content.link }}">
                                     {{ $content.linkText }}
                                 </a>
-                            </button>
+                            </div>
                         </div>
 
                     {{ end }}
