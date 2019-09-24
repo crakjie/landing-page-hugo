@@ -1,7 +1,7 @@
 <section id="services">
 
 <!-- Page Content -->
- {{ range $index, $element :=  .Data.Pages }}{{ if or (eq .Section "services") (eq .Section "post") }}
+ {{ range $index, $element :=  .Site.RegularPages }}{{ if or (eq .Section "services") (eq .Section "post") }}
     {{ if modBool $index 2 }}
     <div class="content-section-a">
 
